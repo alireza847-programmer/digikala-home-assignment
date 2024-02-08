@@ -1,20 +1,20 @@
 import React, {PropsWithChildren} from 'react';
 import {render} from '@testing-library/react-native';
-import VRow from './index';
+import DRow from './index';
 import {ThemeProvider} from '@emotion/react';
 import {theme} from 'themes/emotion';
-import {VRowProps} from 'types/components/uiElements/row';
+import {RowProps} from 'types/components/uiElements/row';
 import {it, describe, expect, jest} from '@jest/globals';
 
-const Component = (props: PropsWithChildren<VRowProps>) => (
+const Component = (props: PropsWithChildren<RowProps>) => (
   <ThemeProvider theme={theme}>
-    <VRow {...props}>{props.children}</VRow>
+    <DRow {...props}>{props.children}</DRow>
   </ThemeProvider>
 );
 
-describe('VRow component', () => {
+describe('DRow component', () => {
   it('should match snapshot with default props', () => {
-    const {toJSON} = render(<VRow>Content goes here</VRow>);
+    const {toJSON} = render(<DRow>Content goes here</DRow>);
     expect(toJSON()).toMatchSnapshot();
   });
 
