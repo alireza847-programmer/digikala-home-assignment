@@ -1,21 +1,21 @@
-# VButton Component Documentation
+# DButton Component Documentation
 
 ## Overview
 
-The `VButton` component is a versatile button element designed for React Native applications. It provides flexibility in styling and configuration to suit different design needs.
+The `DButton` component is a versatile button element designed for React Native applications. It provides flexibility in styling and configuration to suit different design needs.
 
 ## Usage
 
 ```jsx
 import React from 'react';
-import VButton, {VButtonProps} from './path-to-your-component/VButton'; // Adjust the import path based on your project structure
+import DButton, {DButtonProps} from './path-to-your-component/DButton'; // Adjust the import path based on your project structure
 
 const MyComponent = () => {
   const handlePress = () => {
     // Handle button press logic here
   };
 
-  const buttonProps: VButtonProps = {
+  const buttonProps: DButtonProps = {
     mode: 'primary', // Options: 'primary', 'secondary', 'error'
     styled: 'FULL_WIDTH', // Options: 'TEXT', 'FULL_WIDTH', 'CONTENT_SIZE'
     title: 'Click me',
@@ -24,19 +24,19 @@ const MyComponent = () => {
     // Add other props as needed
   };
 
-  return <VButton {...buttonProps} />;
+  return <DButton {...buttonProps} />;
 };
 ```
 
 ## Props
 
-### VButton Props
+### DButton Props
 
 - `mode` (string): The mode of the button. Options include 'primary', 'secondary', and 'error'.
 - `styled` (string): The style of the button. Options include 'TEXT', 'FULL_WIDTH', and 'CONTENT_SIZE'.
 - `width` (DimensionValue): The width of the button. Use this to set a custom width for the button.
 
-### Extended VButton Props
+### Extended DButton Props
 
 - `title` (string): The main text content of the button.
 - `icon` (function): A function that returns a React element to be used as the button icon.
@@ -50,14 +50,14 @@ const MyComponent = () => {
 
 ```jsx
 import React from 'react';
-import VButton, {VButtonProps} from './path-to-your-component/VButton'; // Adjust the import path based on your project structure
+import DButton, {DButtonProps} from './path-to-your-component/DButton'; // Adjust the import path based on your project structure
 
 const ExampleScreen = () => {
   const handlePress = () => {
     // Handle button press logic here
   };
 
-  const buttonProps: VButtonProps = {
+  const buttonProps: DButtonProps = {
     mode: 'primary',
     title: 'Click me',
     subTitle: 'Optional subtitle',
@@ -65,7 +65,7 @@ const ExampleScreen = () => {
     onPress: handlePress,
   };
 
-  return <VButton {...buttonProps} />;
+  return <DButton {...buttonProps} />;
 };
 
 export default ExampleScreen;
