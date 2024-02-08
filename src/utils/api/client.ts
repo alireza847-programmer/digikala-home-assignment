@@ -4,8 +4,6 @@ const client = create({
   baseURL: 'https://dummyjson.com/',
 });
 
-client.addResponseTransform(response => {
-  console.log(response, 'response');
-});
+client.addResponseTransform(response => {});
 
 export default client;

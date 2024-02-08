@@ -6,7 +6,7 @@ const Input = styled.TextInput<InputProps>(({theme, marginTopRatio = 1}) => ({
   width: '100%',
   padding: theme.HorizontalRem * 4,
   borderRadius: theme.radius * 2,
-  borderColor: theme.colors.stroke.input,
+  borderColor: theme.colors.button.primary,
   fontFamily: theme.fonts.medium15.fontFamily,
   fontSize: theme.fonts.medium15.fontSize,
   marginTop: theme.verticalRem * marginTopRatio,

@@ -1,7 +1,7 @@
 import styled from '@emotion/native';
 import {TextProps} from 'types/components/uiElements/text';
 
-const VText = styled.Text<TextProps>(
+const DText = styled.Text<TextProps>(
   ({
     theme,
     textAlign = 'center',
@@ -25,4 +25,4 @@ const VText = styled.Text<TextProps>(
   }),
 );
 
-export default VText;
+export default DText;

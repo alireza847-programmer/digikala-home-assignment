@@ -16,6 +16,7 @@
     "@react-navigation/native": "^6.1.9",
     "@react-navigation/native-stack": "^6.9.17",
     "apisauce": "^3.0.1",
+    "lodash": "^4.17.21",
     "react": "18.2.0",
     "react-api-wrapper-hook": "^1.1.6",
     "react-native": "0.73.4",
