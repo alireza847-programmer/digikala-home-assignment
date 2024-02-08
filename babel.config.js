@@ -7,10 +7,11 @@ module.exports = {
         alias: {
           root: ['./src/'],
           routes: './src/routes',
+          types: './src/types',
+          pages: './src/pages',
           // components: './src/components',
           // themes: './src/themes',
           // utils: './src/utils',
-          // types: './src/types',
           // pages: './src/pages',
           // assets: './src/assets',
           // layouts: './src/layouts',
