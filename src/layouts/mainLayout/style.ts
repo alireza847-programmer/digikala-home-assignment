@@ -1,6 +1,6 @@
 import styled from '@emotion/native';
 import VRow from 'components/uiElements/row';
-import {wp} from 'utils/dimensions';
+import {hp, wp} from 'utils/dimensions';
 
 export const Container = styled.View(({theme}) => ({
   width: '100%',
@@ -15,9 +15,9 @@ export const Header = styled(VRow)(({theme}) => ({
     width: 0,
   },
   backgroundColor: theme.colors.backgroundColor,
-  paddingTop: theme.verticalRem * 4,
-  paddingBottom: theme.verticalRem * 6,
-  alignItems: 'flex-start',
+  height: hp(8),
+  alignItems: 'center',
+  elevation: 10,
 }));
 
 export const ChildrenWrapper = styled.View(({theme}) => ({

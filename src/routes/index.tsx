@@ -11,7 +11,7 @@ const Routes = () => {
     ...DefaultTheme,
     colors: {
       ...DefaultTheme.colors,
-      background: '#fff',
+      background: '#dfdfdf78',
     },
   };
   return (

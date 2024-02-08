@@ -6,13 +6,14 @@ import DRow from 'components/uiElements/row';
 import {CloseSvg} from 'assets/svgs';
 import {theme} from 'themes/emotion';
 import DButton from 'components/uiElements/button';
+import {View} from 'react-native';
 
 const MainLayout = (props: PropsWithChildren<MainLayoutProps>) => {
   const {
     children,
     title = '',
     withClose = true,
-    rightIcon,
+    rightIcon = <View />,
     withHeader,
     onClosePress = () => {},
   } = props;

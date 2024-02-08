@@ -12,7 +12,9 @@
       "components/*": ["components/*"],
       "utils/*": ["utils/*"],
       "themes/*": ["themes/*"],
-
+      "assets/*": ["assets/*"],
+      "layouts/*": ["layouts/*"],
+      "locales/*": ["locales/*"],
     }
   }
 }
