@@ -68,8 +68,8 @@ const ProductDetail = (props: ProductDetailProps) => {
         <DRow marginTopRatio={5}>
           <DButton
             onPress={() => {}}
-            title="Add To Cart"
-            subTitle={`${data.price}$`}
+            title={productDetail.button}
+            subTitle={`. ${data.price}$`}
           />
         </DRow>
       </Animated.View>

@@ -6,5 +6,6 @@ export const texts = {
   },
   productDetail: {
     title: 'Detail',
+    button: 'Add To Cart',
   },
 };
