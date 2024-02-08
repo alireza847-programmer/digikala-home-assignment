@@ -7,6 +7,7 @@
 
 import {ThemeProvider} from '@emotion/react';
 import {NavigationContainer} from '@react-navigation/native';
+import RootWrapper from 'components/rootWrapper';
 import React from 'react';
 import {SafeAreaView, StyleSheet} from 'react-native';
 import Routes from 'routes/index';
@@ -16,7 +17,9 @@ function App(): React.JSX.Element {
   return (
     <ThemeProvider theme={theme}>
       <SafeAreaView style={styles.container}>
-        <Routes />
+        <RootWrapper>
+          <Routes />
+        </RootWrapper>
       </SafeAreaView>
     </ThemeProvider>
   );
