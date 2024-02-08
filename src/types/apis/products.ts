@@ -1,4 +1,5 @@
 export const GET_PRODUCTS_API_URL = 'products';
+export const GET_PRODUCTS_WITH_SEARCH_API_URL = 'products/search';
 
 export interface ProductsDto {
   products: Array<ProductDto>;

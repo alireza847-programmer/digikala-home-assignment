@@ -9,6 +9,8 @@ export const Container = styled(DRow)(({theme}) => ({
   width: '100%',
   marginTop: wp(5),
   paddingLeft: theme.HorizontalRem * 3,
+  borderRadius: theme.radius * 2,
+  elevation: 2,
 }));
 
 export const ProductImage = styled(Image)({

@@ -15,6 +15,7 @@
       "assets/*": ["assets/*"],
       "layouts/*": ["layouts/*"],
       "locales/*": ["locales/*"],
+      "hooks/*": ["hooks/*"],
     }
   }
 }
