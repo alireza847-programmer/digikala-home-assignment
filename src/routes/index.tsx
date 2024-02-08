@@ -1,8 +1,9 @@
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {PRODUCT_DETAIL, PRODUCT_HOME} from './const';
+import {RootStackParamList} from 'types/routes/root';
 
-const Stack = createNativeStackNavigator();
+const Stack = createNativeStackNavigator<RootStackParamList>();
 
 const Routes = () => {
   return (
