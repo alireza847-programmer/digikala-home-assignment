@@ -9,6 +9,10 @@
       "routes/*": ["routes/*"],
       "types/*": ["types/*"],
       "pages/*": ["pages/*"],
+      "components/*": ["components/*"],
+      "utils/*": ["utils/*"],
+      "themes/*": ["themes/*"],
+
     }
   }
 }

@@ -5,16 +5,20 @@
  * @format
  */
 
+import {ThemeProvider} from '@emotion/react';
 import {NavigationContainer} from '@react-navigation/native';
 import React from 'react';
 import {SafeAreaView, StyleSheet} from 'react-native';
 import Routes from 'routes/index';
+import {theme} from 'themes/emotion';
 
 function App(): React.JSX.Element {
   return (
-    <SafeAreaView style={styles.container}>
-      <Routes />
-    </SafeAreaView>
+    <ThemeProvider theme={theme}>
+      <SafeAreaView style={styles.container}>
+        <Routes />
+      </SafeAreaView>
+    </ThemeProvider>
   );
 }
 
