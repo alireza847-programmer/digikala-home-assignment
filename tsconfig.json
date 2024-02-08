@@ -3,10 +3,10 @@
   "compilerOptions": {
     "strict": true,
     // Path alias config
-    "baseUrl": ".",
+    "baseUrl": "./src",
     "paths": {
       // This needs to be mirrored in babel.config.js
-      // "components/*": ["src/components/*"],
+      "routes/*": ["routes/*"],
     }
   }
 }
