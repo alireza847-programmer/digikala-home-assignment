@@ -7,6 +7,15 @@
     "paths": {
       // This needs to be mirrored in babel.config.js
       "routes/*": ["routes/*"],
+      "types/*": ["types/*"],
+      "pages/*": ["pages/*"],
+      "components/*": ["components/*"],
+      "utils/*": ["utils/*"],
+      "themes/*": ["themes/*"],
+      "assets/*": ["assets/*"],
+      "layouts/*": ["layouts/*"],
+      "locales/*": ["locales/*"],
+      "hooks/*": ["hooks/*"],
     }
   }
 }
