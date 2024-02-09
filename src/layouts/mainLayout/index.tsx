@@ -13,7 +13,6 @@ const MainLayout = (props: PropsWithChildren<MainLayoutProps>) => {
     children,
     title = '',
     withClose = true,
-    rightIcon = <View />,
     withHeader,
     onClosePress = () => {},
   } = props;
@@ -34,7 +33,9 @@ const MainLayout = (props: PropsWithChildren<MainLayoutProps>) => {
             )}
           </DRow>
           <DText typography="semiBold16">{title}</DText>
-          <DRow fullWidth={false}>{rightIcon}</DRow>
+          <DRow fullWidth={false}>
+            {<DButton onPress={() => {}} styled="TEXT" title="" />}
+          </DRow>
         </Header>
       )}
       <ChildrenWrapper>{children}</ChildrenWrapper>

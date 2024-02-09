@@ -21,11 +21,9 @@ test('MainLayout component snapshot', () => {
   expect(tree).toMatchSnapshot();
 });
 
-test('MainLayout component snapshot with close button and custom right icon', () => {
+test('MainLayout component snapshot with close button ', () => {
   const tree = renderer
-    .create(
-      <Component withHeader={true} withClose={true} rightIcon={<YourIcon />} />,
-    )
+    .create(<Component withHeader={true} withClose={true} />)
     .toJSON();
   expect(tree).toMatchSnapshot();
 });
